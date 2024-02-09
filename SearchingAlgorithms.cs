@@ -8,7 +8,7 @@ namespace DSAlgo
 {
     internal class SearchingAlgorithms
     {
-        public static int LinearSearch(List<int> DataStructure, int key)
+        public int LinearSearch(List<int> DataStructure, int key)
         {
             foreach (int element in DataStructure)
             {
@@ -17,7 +17,7 @@ namespace DSAlgo
             }
             return -1;
         }
-        public static int BinarySearch(List<int> DataStructure, int key)
+        public int BinarySearch(List<int> DataStructure, int key)
         {
             int left = 0;
             int right = DataStructure.Count - 1;
