@@ -44,5 +44,20 @@ namespace DSAlgo
                 DataStructureToSort[i] = temp;
             }
         }
+        public void InsertionSort(List<int> DataStructureToSort)
+        {
+            int n = DataStructureToSort.Count;
+            for (int i = 1; i < n; i++)
+            {
+                int key = DataStructureToSort[i];
+                int j = i - 1;
+                while (j >= 0 && DataStructureToSort[j] > key)
+                {
+                    DataStructureToSort[j + 1] = DataStructureToSort[j];
+                    j = j - 1;
+                }
+                DataStructureToSort[j + 1] = key;
+            }
+        }
     }
 }
